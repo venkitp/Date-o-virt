@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Contact us
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style1.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container anim">
+            <a href="index.html">Home</a>
+            <h1>Connect With Us</h1>
+            <p>We would love to respond to your queries and help you.<br>
+                Feel free to get in touch with us.
+            </p>
+            <div class="contact-box">
+                <div class="contact-left">
+                    <h2>
+                        Send your request
+                    </h2>
+                    <form>
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label>Name</label>
+                                <input type="text" placeholder="Venkatesh">
+                            </div>
+                        </div>
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label>Phone</label>
+                                <input type="text" placeholder="9042851560">
+                            </div>
+                        </div>
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label>Email</label>
+                                <input type="email" placeholder="tpvenkatesh@gmail.com">
+                            </div>
+                        </div>
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label>Comments</label>
+                                <input type="text" placeholder="Type your queries here">
+                            </div>
+                        </div>
+                    </form>
+                    <button type="Submit" class="only" onclick="openPopup()"> SEND</button>
+                </div>
+                <div class="contact-right">
+                    <h3>Reach us</h3>
+                    <table>
+                        <tr>
+                             <td>Email</td>
+                             <td>dateovirt@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Phone</td>
+                            <td>9042851560</td>
+                        </tr>
+                        <tr>
+                            <td>Address</td>
+                            <td>Madurai, Tamil Nadu, India</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="popup" id="popup">
+                <img src="tick.png">
+                <h2>Thank You!</h2>
+                <p>Your details have been successfully submitted</p>
+                <button type="button" class="ok" onclick="closePopup()">OK</button>
+            </div>
+        </div>
+        <script>
+            let popup=document.getElementById("popup");
+
+            function openPopup(){
+                popup.classList.add("open-popup");
+            }
+            function closePopup(){
+                popup.classList.remove("open-popup");
+            }
+        </script>
+    </body>
+</html>
